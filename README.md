@@ -25,11 +25,13 @@ mos驱动电路
 
 
 注：12v转5vldo原理图的输入端贴片电容耐压为10v，实际输入为12v，记得更换合适耐压的贴片电容
+
 单片机与屏幕
 <img width="696" height="582" alt="单片机与屏幕" src="https://github.com/user-attachments/assets/278795ab-97ea-451f-931d-247e9c004c4f" />
 
 
 由于最开始设计的时候没意识到串口调试的重要性，导致我手里的板子是没有串口调试针的，最终只好开动脑筋焊了两根杜邦线上去当调试针（
+
 PCB
 
 <img width="1772" height="881" alt="pcb" src="https://github.com/user-attachments/assets/4b9998bb-9d8e-4a8c-9468-5a508d5bfccf" />
