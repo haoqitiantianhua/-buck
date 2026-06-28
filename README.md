@@ -5,17 +5,20 @@
 原理图
 主电路
 <img width="1476" height="393" alt="主电路" src="https://github.com/user-attachments/assets/a9c2fc51-af39-432a-846f-4146c4fa8aeb" />
+
 电感选这么大的原因是最初设计最大电流为2A，2A的纹波电流在0.4A-0.8A之间，我觉得又不是量产也不怎么需要考虑成本，冗余还是留大一些比较好，纹波电流就按0.8A算的，后来觉得我没有用得到2A大电流的使用场景以及懒得做过流保护，最终直接在输出端接了个1A的保险丝，现在电路最大输出电流为1A，由于电感已经到货了也就没去更换大小，目前来看用33uh的电感也没对我的电路造成什么影响
 mos驱动电路
 <img width="552" height="417" alt="驱动电路" src="https://github.com/user-attachments/assets/25d67e9a-27cd-4797-abdf-74929bbbbaa8" />
 供电电路与ldo3.3v输出
 <img width="828" height="684" alt="ldo输出与供电电路" src="https://github.com/user-attachments/assets/3e3aef3b-ad08-4571-8a94-0b6897bea631" />
+
 注：12v转5vldo原理图的输入端贴片电容耐压为10v，实际输入为12v，记得更换合适耐压的贴片电容
 单片机与屏幕
 <img width="696" height="582" alt="单片机与屏幕" src="https://github.com/user-attachments/assets/278795ab-97ea-451f-931d-247e9c004c4f" />
 由于最开始设计的时候没意识到串口调试的重要性，导致我手里的板子是没有串口调试针的，最终只好开动脑筋焊了两根杜邦线上去当调试针（
 PCB
 <img width="1772" height="881" alt="pcb" src="https://github.com/user-attachments/assets/4b9998bb-9d8e-4a8c-9468-5a508d5bfccf" />
+
 调试针旁边的丝印是对应串口调试器的，不是对应单片机的
 使用说明
 DC头旁边的自锁按钮为电路总开关，单片机旁的按钮从左到右依次对应9v 7v 5v，单片机供电由ldo输出5v到单片机5v供电引脚，因此烧录调试时不需要烧录器与调试器供电，防止烧坏芯片
